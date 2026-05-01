@@ -1,10 +1,10 @@
 /* Unified Footer Styles with Theme Support */
 :root {
-    --footer-bg: linear-gradient(to top, rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 0.8));
-    --footer-text: #94a3b8;
+    --footer-bg: linear-gradient(to top, #000000 0%, #030712 100%);
+    --footer-text: #9ca3af;
     --footer-title: #ffffff;
-    --footer-primary: #0ea5e9;
-    --footer-border: rgba(255, 255, 255, 0.1);
+    --footer-primary: #38bdf8;
+    --footer-border: rgba(255, 255, 255, 0.05);
 }
 
 .glass-footer {

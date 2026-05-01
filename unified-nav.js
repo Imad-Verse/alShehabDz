@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Re-run periodically to catch images loaded via radio lists or dynamic content
     setInterval(fixImages, 2000);
 
-    // 2. Adjust Hero Cover Height for consistent view on GitHub Pages
+    // 2. Adjust Hero Cover Height (Disabled: Conflicts with modern full-viewport design)
+    /*
     const applyHeroFix = () => {
         const heroCover = document.querySelector('.hero-cover-container');
         if (heroCover) {
@@ -102,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     applyHeroFix();
     window.addEventListener('resize', applyHeroFix);
+    */
 
     // 3. Haramain Player Fix (makkamadina-tv)
     // If the video sources from holol.com fail, we alert the console or try to refresh
