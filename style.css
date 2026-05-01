@@ -48,14 +48,19 @@ body::before {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle at center, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
     z-index: -1;
     animation: rotate 60s linear infinite;
 }
 
 @keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Utilities */
@@ -81,7 +86,8 @@ body::before {
     margin-bottom: 3rem;
     color: var(--secondary-color);
     position: relative;
-    display: table; /* Better for centering with margin auto */
+    display: table;
+    /* Better for centering with margin auto */
     margin-left: auto;
     margin-right: auto;
 }
@@ -112,7 +118,7 @@ body::before {
 
 .hero-cover-container {
     width: 100%;
-    height: 400px;
+    height: 500px;
     min-height: 300px;
     position: relative;
     overflow: hidden;
@@ -126,13 +132,14 @@ body::before {
 }
 
 .hero-content {
-    margin-top: -75px; /* Half of profile size to overlap */
+    margin-top: -75px;
+    /* Half of profile size to overlap */
     position: relative;
     z-index: 10;
     padding: 0 20px;
 }
 
-.hero-content > * {
+.hero-content>* {
     position: relative;
     z-index: 1;
 }
@@ -149,9 +156,17 @@ body::before {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .hero h1 {
@@ -288,11 +303,23 @@ section {
     padding: 30px;
 }
 
-.rule-allow { background: rgba(16, 185, 129, 0.05); border-color: rgba(16, 185, 129, 0.2); }
-.rule-deny { background: rgba(239, 68, 68, 0.05); border-color: rgba(239, 68, 68, 0.2); }
+.rule-allow {
+    background: rgba(16, 185, 129, 0.05);
+    border-color: rgba(16, 185, 129, 0.2);
+}
 
-.rule-allow .rule-header { color: var(--secondary-color); }
-.rule-deny .rule-header { color: var(--accent-red); }
+.rule-deny {
+    background: rgba(239, 68, 68, 0.05);
+    border-color: rgba(239, 68, 68, 0.2);
+}
+
+.rule-allow .rule-header {
+    color: var(--secondary-color);
+}
+
+.rule-deny .rule-header {
+    color: var(--accent-red);
+}
 
 .rule-header {
     display: flex;
@@ -483,11 +510,25 @@ section {
 }
 
 @keyframes heartBeat {
-    0% { transform: scale(1); }
-    14% { transform: scale(1.1); }
-    28% { transform: scale(1); }
-    42% { transform: scale(1.1); }
-    70% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.1);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.1);
+    }
+
+    70% {
+        transform: scale(1);
+    }
 }
 
 .support-thanks p {
@@ -613,7 +654,8 @@ section {
     z-index: 2000;
 }
 
-.whatsapp-float, .scroll-top-float {
+.whatsapp-float,
+.scroll-top-float {
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -646,7 +688,8 @@ section {
     transform: scale(1);
 }
 
-.whatsapp-float:hover, .scroll-top-float:hover {
+.whatsapp-float:hover,
+.scroll-top-float:hover {
     transform: scale(1.1) translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
@@ -668,15 +711,19 @@ section {
     .hero h1 {
         font-size: 2.5rem;
     }
+
     .hero {
         background-attachment: scroll;
     }
+
     .hero-cover-container {
         height: 200px;
     }
+
     .hero-content {
         margin-top: -60px;
     }
+
     .hero-profile {
         width: 120px;
         height: 120px;
