@@ -1,5 +1,6 @@
 /**
  * Unified Navigation Script for Al-Shehab Platform
+ * Updated with Global Deployment Fixes
  */
 document.addEventListener('DOMContentLoaded', () => {
     const mobileBtn = document.querySelector('.mobile-menu-btn');
@@ -58,4 +59,58 @@ document.addEventListener('DOMContentLoaded', () => {
             link.setAttribute('rel', 'noopener noreferrer');
         }
     });
+
+    // --- Global Deployment Fixes ---
+    
+    // 1. Fix broken images across the platform
+    const fixImages = () => {
+        document.querySelectorAll('img').forEach(img => {
+            if (!img.dataset.fixApplied) {
+                img.dataset.fixApplied = 'true';
+                
+                // Add referrerpolicy to help with cross-domain images
+                img.setAttribute('referrerpolicy', 'no-referrer');
+                
+                // Enhanced error handling
+                const originalError = img.onerror;
+                img.onerror = function() {
+                    if (originalError) originalError.call(this);
+                    // Use a nice placeholder based on the alt text
+                    const fallbackName = this.alt || 'مركز الشهاب';
+                    this.src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(fallbackName) + '&background=020617&color=d4af37&bold=true&size=128';
+                    this.style.opacity = '0.8';
+                };
+            }
+        });
+    };
+    
+    fixImages();
+    // Re-run periodically to catch images loaded via radio lists or dynamic content
+    setInterval(fixImages, 2000);
+
+    // 2. Adjust Hero Cover Height for consistent view on GitHub Pages
+    const applyHeroFix = () => {
+        const heroCover = document.querySelector('.hero-cover-container');
+        if (heroCover) {
+            if (window.innerWidth > 768) {
+                heroCover.style.setProperty('height', '500px', 'important');
+            } else {
+                heroCover.style.setProperty('height', '300px', 'important');
+            }
+        }
+    };
+    
+    applyHeroFix();
+    window.addEventListener('resize', applyHeroFix);
+
+    // 3. Haramain Player Fix (makkamadina-tv)
+    // If the video sources from holol.com fail, we alert the console or try to refresh
+    if (window.location.href.includes('makkamadina-tv')) {
+        const videos = document.querySelectorAll('video');
+        videos.forEach(v => {
+            v.addEventListener('error', function() {
+                console.warn('Video source failed, possibly CORS or temporary down.');
+            }, true);
+        });
+    }
 });
