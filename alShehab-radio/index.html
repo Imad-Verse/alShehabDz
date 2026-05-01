@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="منصة استماع احترافية للبثوث المباشرة والإذاعات الإسلامية - مركز الشهاب الدعوي" />
+    <title>مركز إذاعة الشهاب | منصة الاستماع المباشر</title>
+    <link rel="icon" type="image/jpeg"
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjANJFvFwc8xVumDGWOZFN8ijnvjF5nYbAiHOcws6HQqTf1YmWUEV-WjCZZjBaRDHptgeqfJ_v_uXFP4W8orfsQt1ilpGhmdqB6pL_97QCkBJLe0I1FnPbqILYQpxE89IauDqjgCcJtyxYn9yfF3t36OI4SeDgOP26VNEuCFZ7rjBJ_8lW0Nrv-wOxTlXZU/s320/20250211_003019.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="../unified-nav.css" />
+    <link rel="stylesheet" href="../unified-footer.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="padding-top: 70px;">
+    <!-- شريط التنقل الموحد -->
+    <nav class="global-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../profile.jpg" alt="مركز الشهاب" onerror="this.src='https://via.placeholder.com/40'">
+                <span>مركز الشهاب</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="index.html" class="active">الإذاعة</a></li>
+                <li><a href="../makkamadina-tv/index.html">البث المباشر</a></li>
+                <li><a href="../sitessalaf/index.html">دليل المواقع</a></li>
+                <li><a href="../support/index.html">الدعم الفني</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="فتح القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="header">
+        <img src="assets/banner.png"
+            class="header-image" alt="مركز الشهاب الدعوي" />
+    </header>
+
+    <main class="main-content">
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم الترحيب والتعريف                                        -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="welcome-section">
+            <h1 class="welcome-title">مرحباً بكم في منصة استماع البث المباشر</h1>
+            <p class="welcome-text">
+                نقدم لكم باقة متميزة من الإذاعات الإسلامية المنتقاة بعناية، والتي تعمل على مدار الساعة لنشر التلاوات القرآنية بمختلف الروايات، والدروس العلمية، والفتاوى الشرعية الموثوقة.
+            </p>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم القرآن الكريم - حفص                                    -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-hafs">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>📖</span> إذاعات القرآن الكريم - حفص</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم القرآن الكريم - ورش                                     -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-warsh">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>🌟</span> إذاعات القرآن الكريم - ورش</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم القرآن الكريم - باقي الروايات                           -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-riwayat">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>📜</span> إذاعات القرآن الكريم - باقي الروايات</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم القرآن الكريم - تجويد                                  -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-tajweed">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>🎙️</span> إذاعات القرآن الكريم - تجويد</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم علوم التجويد                                            -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-uloom">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>📚</span> إذاعات علم التجويد</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم التفسير                                                -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-tafseer">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>💡</span> إذاعات التفسير</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم التراجم                                                -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-tarajem">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>🌍</span> إذاعات التراجم</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم الأحاديث النبوية                                        -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-hadith">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>🕌</span> إذاعات الأحاديث النبوية</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم السور المعينة أو الأدعية                               -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-surahs">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>🤲</span> السور المعينة أو الأدعية</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم السيرة النبوية                                          -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-seerah">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>🌙</span> إذاعات السيرة النبوية</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم الدروس والمحاضرات                                      -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-duroos">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>🎓</span> إذاعات الدروس والمحاضرات</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم الفتاوى الشرعية                                        -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-fatawa">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>⚖️</span> إذاعات الفتاوى الشرعية</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <!-- قسم متنوعة                                                 -->
+        <!-- ══════════════════════════════════════════════════════════ -->
+        <section class="category" id="cat-misc">
+            <div class="category-header" onclick="toggleCategory(this)">
+                <h3><span>📻</span> إذاعات متنوعة</h3>
+                <span class="arrow">▼</span>
+            </div>
+            <div class="radio-list">
+            </div>
+        </section>
+
+        <!-- قسم الإحصائيات -->
+        <section class="stats-section">
+            <div class="visitor-card glass">
+                <div class="visitor-info">
+                    <div class="visitor-icon">👥</div>
+                    <div class="visitor-label">إجمالي الزيارات من حول العالم</div>
+                </div>
+                <div class="visitor-count" id="globalCounter">0000</div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- شريط التشغيل الثابت -->
+    <div class="now-playing-bar" id="nowPlayingBar">
+        <div class="now-playing-content">
+            <div class="player-info">
+                <div class="player-metadata">
+                    <span class="player-label">يتم الاستماع الآن</span>
+                    <span class="player-title" id="currentRadioName">اختر إذاعة للبدء</span>
+                    <span class="player-subtitle" id="currentRadioSubtitle"></span>
+                </div>
+            </div>
+            
+            <div class="active-listeners-bar">
+                <span class="pulse-dot"></span>
+                <span>المستمعون الآن: <b id="onlineListenersCounter">124</b></span>
+            </div>
+
+            <div class="player-controls">
+                <div class="volume-wrapper">
+                    <span>🔊</span>
+                    <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1"
+                        onchange="setVolume(this.value)" />
+                </div>
+                <button class="main-toggle-btn" id="togglePlayPause">إيقاف</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Unified Footer -->
+    <footer class="glass-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Section 1: About -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../profile.jpg" alt="مركز الشهاب" class="footer-image" onerror="this.src='https://via.placeholder.com/60'">
+                        <h3>مركز الشهاب</h3>
+                    </div>
+                    <p class="footer-desc">مركز سُني سلفي متبع لكتاب الله وسنة رسوله صلى الله عليه وسلم، يسعى لنشر العلم الشرعي المؤصل وفق فهم سلف الأمة.</p>
+                </div>
+
+                <!-- Section 2: Links -->
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="index.html"><i class="fas fa-radio"></i> إذاعة الشهاب</a></li>
+                        <li><a href="../makkamadina-tv/index.html"><i class="fas fa-tv"></i> بث الحرمين</a></li>
+                        <li><a href="../sitessalaf/index.html"><i class="fas fa-globe"></i> دليل المواقع</a></li>
+                        <li><a href="../support/index.html"><i class="fas fa-headset"></i> الدعم والمساعدة</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 3: Contact & Social -->
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@alshehab.dz</p>
+                        <p><i class="fab fa-whatsapp"></i> +213 657 565 256</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/alShehabDz/" target="_blank" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/alShehabDz" target="_blank" class="social-icon" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.youtube.com/@alShehabDz" target="_blank" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://t.me/alShehabDz" target="_blank" class="social-icon" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>جميع الحقوق محفوظة &copy; <span id="currentYear"></span> - مركز الشهاب الدعوي</p>
+                    <p>المشرف العام: أبو الحارث عماد الجزائري - غفر الله له</p>
+                </div>
+                <div class="developer-info">
+                    <p>تم التطوير بواسطة <a href="https://abulharith-imad.site" target="_blank">أبو الحارث عماد بعلول</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- مؤشر التحميل -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- زر العودة للأعلى -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="radioData.js"></script>
+    <script src="../unified-nav.js"></script>
+</body>
+
+</html>

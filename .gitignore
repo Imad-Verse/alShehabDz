@@ -1,0 +1,15 @@
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+alShehab-radio/radioData.json
+node_modules/
+.DS_Store
