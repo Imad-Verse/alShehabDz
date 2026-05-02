@@ -1299,6 +1299,12 @@ const radiosData = [
         "subtitle": "إذاعة متواصلة"
     },
     {
+        "name": "إذاعة ابن القيم",
+        "url": "https://c38.radioboss.fm:8323/stream",
+        "group": "duroos",
+        "subtitle": "إذاعة متواصلة"
+    },
+    {
         "name": "موقع السنة",
         "url": "http://andromeda.shoutca.st:8189/stream",
         "group": "duroos",
@@ -1363,19 +1369,19 @@ const initRadios = () => {
     }
 
     const defaultImages = {
-        hafs: "https://books-library.website/files/books-library.net-09142233Dp3H3.JPG",
-        warsh: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        riwayat: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        tajweed: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        uloom: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        tafseer: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        tarajem: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        hadith: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        surahs: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        seerah: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        duroos: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        fatawa: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg",
-        misc: "https://lh3.googleusercontent.com/-jMmVzv1PoHo/Z5nm3U4QngI/AAAAAAAAEp0/OdJaw4vDrPM7dsatgKV8VBIhF1OSmRL-gCNcBGAsYHQ/s1080/IMG_ORG_1738139336484.jpeg"
+        hafs: "assets/logo-radio.png",
+        warsh: "assets/logo-radio.png",
+        riwayat: "assets/logo-radio.png",
+        tajweed: "assets/logo-radio.png",
+        uloom: "assets/logo-radio.png",
+        tafseer: "assets/logo-radio.png",
+        tarajem: "assets/logo-radio.png",
+        hadith: "assets/logo-radio.png",
+        surahs: "assets/logo-radio.png",
+        seerah: "assets/logo-radio.png",
+        duroos: "assets/logo-radio.png",
+        fatawa: "assets/logo-radio.png",
+        misc: "assets/logo-radio.png"
     };
 
     const groupSubtitles = {
